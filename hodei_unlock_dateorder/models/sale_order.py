@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from odoo import api, fields, models, _
+from odoo import fields, models
 
 
 class SaleOrder(models.Model):
@@ -9,8 +9,9 @@ class SaleOrder(models.Model):
     date_order = fields.Datetime(readonly=False)
 
     def action_confirm(self):
-        if self.date_order:
-            date_order_saved = self.date_order
-        super(SaleOrder, self).action_confirm()
-        self.write({'date_order': date_order_saved})
-        return True
+        for order in self:
+            if order.date_order:
+                date_order_saved = order.date_order
+            super().action_confirm()
+            order.write({'date_order': date_order_saved})
+            return True
