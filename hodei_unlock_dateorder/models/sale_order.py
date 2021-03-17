@@ -15,7 +15,7 @@ class SaleOrder(models.Model):
             if order.date_order:
                 date_order_saved = order.date_order
             super(SaleOrder, order).action_confirm()
-            _logger.debug('date_order_saved')
-            _logger.debug(date_order_saved)
+            _logger.info('date_order_saved')
+            _logger.info(date_order_saved)
             order.write({'date_order': date_order_saved})
         return True
