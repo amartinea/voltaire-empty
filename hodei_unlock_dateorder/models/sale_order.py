@@ -16,7 +16,7 @@ class SaleOrder(models.Model):
                 _logger.info('oui')
                 date_order_saved = order.date_order
             _logger.info(date_order_saved)
-            super(SaleOrder, order).action_confirm()
+            #super(SaleOrder, order).action_confirm()
             _logger.info('date_order_saved')
             _logger.info(date_order_saved)
             order.write({'date_order': date_order_saved})
