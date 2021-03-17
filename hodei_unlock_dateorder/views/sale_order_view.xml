@@ -6,7 +6,7 @@
         <field name="inherit_id">sale.vie_order_form</field>
         <field name="arch" type="xml">
             <field name="arch" type="xml">
-                <xpath expr="//field[@name='date_order']" position="attributes"/>
+                <xpath expr="//field[@name='date_order']" position="attributes">
                     <attribute name="groups"></attribute>
                 </xpath>
             </field>
