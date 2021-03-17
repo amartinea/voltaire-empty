@@ -12,6 +12,6 @@ class SaleOrder(models.Model):
         for order in self:
             if order.date_order:
                 date_order_saved = order.date_order
-            super().action_confirm()
+            super(order).action_confirm()
             order.write({'date_order': date_order_saved})
         return True
