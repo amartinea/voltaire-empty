@@ -13,7 +13,9 @@ class SaleOrder(models.Model):
     def action_confirm(self):
         for order in self:
             if order.date_order:
+            	_logger.info('oui')
                 date_order_saved = order.date_order
+            _logger.info(date_order_saved)
             super(SaleOrder, order).action_confirm()
             _logger.info('date_order_saved')
             _logger.info(date_order_saved)
