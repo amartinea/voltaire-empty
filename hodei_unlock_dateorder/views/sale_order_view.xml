@@ -8,7 +8,7 @@
             <xpath expr="//field[@name='date_order']" position="attributes">
                 <attribute name="groups"></attribute>
             </xpath>
-            <xpath expr="//label[@for='date_order']/.." position="attribute">
+            <xpath expr="//label[@for='date_order']/.." position="attributes">
                 <attribute name="groups"></attribute>
             </xpath>
         </field>
