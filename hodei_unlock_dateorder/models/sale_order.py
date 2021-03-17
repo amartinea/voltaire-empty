@@ -14,4 +14,4 @@ class SaleOrder(models.Model):
                 date_order_saved = order.date_order
             super().action_confirm()
             order.write({'date_order': date_order_saved})
-            return True
+        return True
