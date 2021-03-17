@@ -20,4 +20,3 @@ This module allow to modifiy order date on sale order at anytime.
     'installable': True,
     'auto_install': False
 }
- 
