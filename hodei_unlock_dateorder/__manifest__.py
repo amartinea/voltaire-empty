@@ -12,7 +12,7 @@ This module allow to modifiy order date on sale order at anytime.
     """,
     'depends': ['sale'],
     'data': [
-        'sale_order_view.xml'
+        'views/sale_order_view.xml'
     ],
     'demo': [
     ],
